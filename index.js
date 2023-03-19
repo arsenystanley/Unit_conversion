@@ -5,13 +5,6 @@ const lengthEl = document.getElementById("length-el")
 const volumeEl = document.getElementById("volume-el")
 const massEl = document.getElementById("mass-el")
 
-let meterToFeet = inputEl.value * 3.281
-let literToGallon = inputEl.value * 0.264
-let kilogramsToPound = inputEl.value * 2.204
-let feetToMeter = inputEl.value / 3.281
-let gallonToLiter = inputEl.value / 0.264
-let poundToKilograms = inputEl.value / 2.204
-
 function render(baseValue, foot, meter, gallon, liter, pound, kilogram) {
     lengthEl.textContent = `${baseValue} meters = ${foot.toFixed(3)} feet | ${baseValue} feet = ${meter.toFixed(3)} meters`;
     
